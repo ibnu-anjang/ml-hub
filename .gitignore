@@ -1,0 +1,9 @@
+archive/
+faceid/venv/
+faceid/venv312/
+faceid/samples/
+faceid/*.h5
+faceid/*.keras
+faceid/*.pkl
+__pycache__/
+*.pyc
