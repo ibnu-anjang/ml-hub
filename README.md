@@ -1,5 +1,10 @@
 # ML Hub
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org)
+[![TensorFlow 2.21](https://img.shields.io/badge/TensorFlow-2.21-orange.svg)](https://tensorflow.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-green.svg)](https://fastapi.tiangolo.com)
+
 Kumpulan project ML demo dengan **satu web hub** terpadu.
 
 ## Project
@@ -86,3 +91,9 @@ Input bisa **upload file** (`file=<image>`) atau **base64 data URL** dari webcam
 - FastAPI + Uvicorn
 - face_recognition (dlib) untuk pengenalan wajah
 - Vanilla HTML/JS frontend (no build step)
+
+## License
+
+[MIT](LICENSE) © 2026 Ibnu Anjang Maulidi
+
+Bebas dipakai, dimodifikasi, dan didistribusikan ulang. Cukup sertakan copyright + notice ini.
