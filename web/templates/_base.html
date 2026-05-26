@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}ML Hub{% endblock %}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="/">⚙ ML Hub</a>
+    <div class="nav-links">
+      <a href="/cloudlens">CloudLens</a>
+      <a href="/faceid">FaceID</a>
+    </div>
+  </nav>
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="footer">CloudLens · FaceID · ML Demos</footer>
+</body>
+</html>

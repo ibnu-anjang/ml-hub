@@ -1,0 +1,32 @@
+{
+  "0": {
+    "key": "altocumulus",
+    "label": "Altocumulus",
+    "desc": "Gumpal sedang, ketinggian menengah",
+    "weather": "Cuaca tidak stabil"
+  },
+  "1": {
+    "key": "cirrus",
+    "label": "Cirrus",
+    "desc": "Tipis seperti bulu, ketinggian tinggi",
+    "weather": "Cuaca akan berubah dalam 24-48 jam"
+  },
+  "2": {
+    "key": "cumulonimbus",
+    "label": "Cumulonimbus",
+    "desc": "Sangat besar dan gelap, menjulang tinggi",
+    "weather": "Badai petir dan hujan lebat"
+  },
+  "3": {
+    "key": "cumulus",
+    "label": "Cumulus",
+    "desc": "Gumpal putih tebal, dasar datar",
+    "weather": "Cuaca cerah dan baik"
+  },
+  "4": {
+    "key": "low_overcast",
+    "label": "Low_overcast",
+    "desc": "Lapisan awan rendah abu-abu (stratus/stratocumulus/nimbostratus)",
+    "weather": "Mendung — gerimis sampai hujan berkepanjangan"
+  }
+}

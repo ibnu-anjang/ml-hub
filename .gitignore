@@ -1,9 +1,43 @@
-archive/
-faceid/venv/
-faceid/venv312/
-faceid/samples/
-faceid/*.h5
-faceid/*.keras
-faceid/*.pkl
+# Virtual environments (semua project pakai venv terpisah)
+**/venv
+**/venv/
+**/venv*
+**/venv*/
+**/.venv/
+
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Model artifacts (besar; user generate sendiri via `make train`)
+**/*.keras
+**/*.h5
+**/*.pkl
+
+# Dataset (besar; user download sendiri via prepare_data.py)
+**/data/raw/
+**/data/splits/
+archive/
+
+# Biometric / private data — JANGAN commit
+faceid/faces.pkl
+faceid/samples/
+faceid/expressions/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log

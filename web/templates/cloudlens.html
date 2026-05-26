@@ -1,0 +1,28 @@
+{% extends "_base.html" %}
+{% block title %}CloudLens — Klasifikasi Awan{% endblock %}
+{% block content %}
+<section class="page-head">
+  <h1>☁ CloudLens</h1>
+  <p>Upload foto langit, sistem akan mengenali jenis awan.</p>
+  <div id="status" class="status-pill">Mengecek model…</div>
+</section>
+
+<div class="grid-2">
+  <div class="panel">
+    <h2>Input</h2>
+    <div id="drop" class="dropzone">
+      <input type="file" id="file" accept="image/*" hidden>
+      <p>Drag & drop foto, atau <button id="pick" class="btn">pilih file</button></p>
+    </div>
+    <img id="preview" class="preview" alt="" hidden>
+    <button id="predict" class="btn btn-primary" disabled>Klasifikasi</button>
+  </div>
+
+  <div class="panel">
+    <h2>Hasil</h2>
+    <div id="result" class="result-empty">Belum ada hasil.</div>
+  </div>
+</div>
+
+<script src="/static/cloudlens.js"></script>
+{% endblock %}

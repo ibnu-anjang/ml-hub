@@ -1,0 +1,64 @@
+{% extends "_base.html" %}
+{% block title %}FaceID — Wajah & Emosi{% endblock %}
+{% block content %}
+<section class="page-head">
+  <h1>👤 FaceID</h1>
+  <p>Kenali wajah dari database + deteksi emosi.</p>
+  <div id="status" class="status-pill">…</div>
+</section>
+
+<div class="tabs">
+  <button class="tab active" data-tab="webcam">📷 Webcam</button>
+  <button class="tab" data-tab="upload">📁 Upload</button>
+  <button class="tab" data-tab="register">➕ Register</button>
+</div>
+
+<div class="grid-2">
+  <div class="panel">
+    <h2>Input</h2>
+
+    <div id="tab-webcam" class="tab-panel active">
+      <video id="video" autoplay playsinline muted></video>
+      <div class="row">
+        <button id="startCam" class="btn">Mulai kamera</button>
+        <button id="snap" class="btn btn-primary" disabled>Analisis frame</button>
+      </div>
+    </div>
+
+    <div id="tab-upload" class="tab-panel">
+      <div id="drop" class="dropzone">
+        <input type="file" id="file" accept="image/*" hidden>
+        <p>Drag & drop foto wajah, atau <button id="pick" class="btn">pilih file</button></p>
+      </div>
+      <img id="preview" class="preview" alt="" hidden>
+      <button id="predict" class="btn btn-primary" disabled>Analisis</button>
+    </div>
+
+    <div id="tab-register" class="tab-panel">
+      <p style="color: var(--muted); margin-top: 0;">
+        Daftarkan wajah baru. Sistem akan ambil 5 foto via webcam (~10 detik).
+      </p>
+      <video id="regVideo" autoplay playsinline muted></video>
+      <input type="text" id="regName" placeholder="Nama (huruf/angka/_/-)"
+             class="input" autocomplete="off">
+      <button id="regStart" class="btn btn-primary">Mulai daftarkan</button>
+      <div id="regProgress" class="reg-progress" hidden>
+        <div class="bar"><div id="regBar" class="bar-fill" style="width:0%"></div></div>
+        <p id="regStatus" class="meta">…</p>
+      </div>
+
+      <h3 class="users-title">Wajah Terdaftar</h3>
+      <ul id="userList" class="user-list"><li class="meta">Memuat…</li></ul>
+    </div>
+
+    <canvas id="canvas" hidden></canvas>
+  </div>
+
+  <div class="panel">
+    <h2>Hasil</h2>
+    <div id="result" class="result-empty">Belum ada hasil.</div>
+  </div>
+</div>
+
+<script src="/static/faceid.js"></script>
+{% endblock %}

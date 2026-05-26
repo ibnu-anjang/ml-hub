@@ -1,0 +1,10 @@
+tensorflow==2.18.0
+numpy<2.2
+pillow
+opencv-python-headless
+scikit-learn
+matplotlib
+fastapi
+uvicorn[standard]
+python-multipart
+kagglehub
