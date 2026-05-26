@@ -11,7 +11,7 @@ Kumpulan project ML demo dengan **satu web hub** terpadu.
 
 | Project | Deskripsi | Status |
 |---|---|---|
-| **CloudLens** | Klasifikasi jenis awan (5-class: cirrus, cumulus, cumulonimbus, altocumulus, low_overcast) via MobileNetV2 transfer learning | ✅ trained (~46% test acc) |
+| **CloudLens** | Klasifikasi jenis awan (5-class: cirrus, cumulus, cumulonimbus, altocumulus, low_overcast) via MobileNetV2 transfer learning | ✅ trained (61.4% test acc) |
 | **FaceID** | Pengenalan wajah + deteksi emosi (FER 7-class) via face_recognition + CNN | ✅ siap pakai |
 
 ## Cara Pakai
